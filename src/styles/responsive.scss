@@ -209,6 +209,12 @@
     .card-dialogue-eror {
         width: 40%;
     }
+
+    .wrapper-card-favorite {
+        & .wrapper-message-not-found {
+            grid-column: span 2;
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -324,6 +330,12 @@
 
     .card-dialogue-eror {
         width: 360px;
+    }
+
+    .wrapper-card-favorite {
+        & .wrapper-message-not-found {
+            grid-column: span 3;
+        }
     }
 }
 

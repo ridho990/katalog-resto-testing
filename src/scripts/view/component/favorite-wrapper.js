@@ -16,6 +16,11 @@ class FavoriteWrapper extends HTMLElement {
 						/>
 					</div>
 					<div class="wrapper-card-favorite">
+						<div class="wrapper-message-not-found">
+							<p class="message-not-found text-navy">
+								Belum ada resto favorit
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>

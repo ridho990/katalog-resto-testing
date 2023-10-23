@@ -49,7 +49,7 @@ class DetailResto extends HTMLElement {
 							<p class="review-resto text-navy">10k Review</p>
 						</div>
 						<div class="info-wrapper__profile-resto">
-							<h1 class="text-navy text-2xl">${name}</h1>
+							<h1 class="profile-resto__name-resto text-navy text-2xl">${name}</h1>
 							<h2 class="text-navy text-lg">${categories}</h2>
 							<p class="text-navy">${address}</p>
 							<hr />

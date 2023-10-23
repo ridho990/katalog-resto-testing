@@ -3,9 +3,10 @@ import '../component/loader-ring';
 import '../component/detail-resto';
 import UrlParser from '../../routes/url-parser';
 import RestoApiSource from '../../data/resto-api';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
 import postReview from '../../utils/post-reveiw';
 import DialogueError from '../../utils/dialogue-error';
+import FavoriteRestoIdb from '../../data/favorite-resto-idb';
 
 const DetailResto = {
     async render() {
@@ -26,10 +27,11 @@ const DetailResto = {
             detailResto.setDetailResto = resto;
             mainContent.appendChild(detailResto);
 
-            LikeButtonInitiator.init({
+            LikeButtonPresenter.init({
                 likeButtonContainer: document.querySelector(
                     '#likeButtonContainer',
                 ),
+                favoriteResto: FavoriteRestoIdb,
                 resto: {
                     id: resto.id,
                     name: resto.name,

@@ -839,6 +839,12 @@ loader-ring {
 
 .wrapper-card-favorite {
     margin-bottom: 0;
+
+    & .wrapper-message-not-found {
+        grid-column: span 1;
+        text-align: center;
+        opacity: 0.8;
+    }
 }
 
 /*

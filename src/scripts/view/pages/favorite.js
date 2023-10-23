@@ -17,6 +17,13 @@ const Favorite = {
         const wrapperCardFavorite = document.querySelector(
             '.wrapper-card-favorite',
         );
+        const wrappperMessageFavorite = document.querySelector(
+            '.wrapper-message-not-found',
+        );
+
+        if (favoriteResto.length != 0) {
+            wrappperMessageFavorite.classList.add('hidden');
+        }
 
         favoriteResto.forEach((resto) => {
             const cardFavorite = document.createElement('card-resto');
