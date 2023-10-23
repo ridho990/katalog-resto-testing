@@ -1,0 +1,85 @@
+{
+	"restaurants": [
+		{
+			"id": "6c7bqjgi84kcowlqdz",
+			"name": "Phone Cafe",
+			"description": "Menawarkan suasana nyaman dan hidangan lezat untuk dinikmati",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/41",
+			"city": "Medan",
+			"type": "Western",
+			"rating": 4.6
+		},
+		{
+			"id": "ljx8i0qu2uckcowlqdz",
+			"name": "Run The Gun",
+			"description": "Menyajikan berbagai hidangan lezat dalam lingkungan asri",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/07",
+			"city": "Bali",
+			"type": "Western",
+			"rating": 4.6
+		},
+		{
+			"id": "fe8bbxoazddkcowlqdz",
+			"name": "Pangsit Express",
+			"description": "Spesialis dalam hidangan pangsit yang lezat, dan hidangan lainnya",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/29",
+			"city": "Ternate",
+			"type": "Chinese",
+			"rating": 4.8
+		},
+		{
+			"id": "ik1zljmlf68kcowlqdz",
+			"name": "Ducky Duck",
+			"description": "Menyediakan hidangan lezat dalam suasana yang nyaman",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/38",
+			"city": "Malang",
+			"type": "Chinese",
+			"rating": 4.7
+		},
+		{
+			"id": "9jpuzkm6n6jkcowlqdz",
+			"name": "Kafein",
+			"description": "Menyajikan berbagai hidangan lezat untuk dinikmati",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/40",
+			"city": "Bali",
+			"type": "Nusantara",
+			"rating": 3.8
+		},
+		{
+			"id": "cpl5jpsnuqkkcowlqdz",
+			"name": "Makan mudah",
+			"description": "Restoran terkenal dengan berbagai hidangan enak dan murah",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/08",
+			"city": "Malang",
+			"type": "Nusantara",
+			"rating": 4.6
+		},
+		{
+			"id": "iqtf9hmdzvbkcowlqdz",
+			"name": "Saya Suka",
+			"description": "Resto yang menyajikan hidangan lezat dan rasa hangat",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/32",
+			"city": "Surabaya",
+			"type": "Javanese",
+			"rating": 3.6
+		},
+		{
+			"id": "8i06gqcc2dpkcowlqdz",
+			"name": "Gigitan Cepat",
+			"description": "Menyediakan makanan cepat saji dengan pelayanan cepat",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/45",
+			"city": "Aceh",
+			"type": "Javanese",
+			"rating": 4
+		},
+		{
+			"id": "wf5o19xhxxkcowlqdz",
+			"name": "Fairy Cafe",
+			"description": "Menawarkan hidangan lezat dalam suasana yang unik untuk dinikmati",
+			"pictureId": "https://restaurant-api.dicoding.dev/images/medium/04",
+			"city": "Lampung",
+			"type": "Javanese",
+			"rating": 3.9
+		}
+	]
+}
