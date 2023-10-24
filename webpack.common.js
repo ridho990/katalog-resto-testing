@@ -2,6 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+// const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
+// const ImageminMozjpeg = require('imagemin-mozjpeg');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -28,6 +31,10 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.(jpe?g|png|svg)$/i,
+                type: 'asset',
+            },
         ],
     },
     plugins: [
@@ -47,5 +54,27 @@ module.exports = {
             swSrc: path.resolve(__dirname, 'src/scripts/sw.js'),
             swDest: './sw.bundle.js',
         }),
+        new ImageMinimizerPlugin({
+            minimizer: {
+                implementation: ImageMinimizerPlugin.imageminMinify,
+                options: {
+                    plugins: [
+                        'imagemin-mozjpeg',
+                        'imagemin-pngquant',
+                        'imagemin-svgo',
+                    ],
+                },
+            },
+            // Disable `loader`
+            loader: false,
+        }),
+        // new ImageminWebpackPlugin({
+        //     plugins: [
+        //         ImageminMozjpeg({
+        //             quality: 50,
+        //             progressive: true,
+        //         }),
+        //     ],
+        // }),
     ],
 };
