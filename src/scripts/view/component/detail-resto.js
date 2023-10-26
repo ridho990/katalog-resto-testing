@@ -15,17 +15,13 @@ class DetailResto extends HTMLElement {
     }
 
     render() {
-        const image = CONFIG.BASE_IMAGE_URL + this._dataResto.pictureId;
         const name = this._dataResto.name;
         const rating = this._dataResto.rating;
         const bgColorRating = rating < 4 ? 'bg-red' : 'bg-blue';
         const colorTextReview = rating < 4 ? 'text-red' : 'text-blue';
         const textReview = rating < 4 ? 'Not Good' : 'Very Good';
 
-        const categories = `${this.makeList(
-            this._dataResto.categories,
-            ' Food',
-        )}`;
+        const categories = `${this.makeList(this._dataResto.categories, ' Food')}`;
         const address = `${this._dataResto.address}, ${this._dataResto.city}`;
         const drinkMenu = this.makeList(this._dataResto.menus.drinks, '');
         const foodMenu = this.makeList(this._dataResto.menus.foods, '');
@@ -35,7 +31,11 @@ class DetailResto extends HTMLElement {
             <section id="skip-main-content" class="section-detail-resto padding-x-content">
 				<div class="detail-resto">
 					<div class="detail-resto__img">
-						<img src="${image}" alt="Foto resto ${name}" />
+					<picture>
+						<source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataResto.pictureId}" />
+						<source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataResto.pictureId}" />
+						<img src="${CONFIG.BASE_IMAGE_URL.small}${this._dataResto.pictureId}" alt="Foto Resto ${this._dataResto.name}" />
+					</picture>
 					</div>
 					<div class="detail-resto__info-wrapper">
 						<div class="info-wrapper__navigasi flex-row text-navy">

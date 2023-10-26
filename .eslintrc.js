@@ -30,7 +30,7 @@ module.exports = {
         indent: 'off',
         'object-curly-spacing': ['error', 'always'],
         'new-cap': ['error', { capIsNew: false }],
-        'max-len': ['error', { code: 150 }],
+        'max-len': ['error', { code: 180 }],
         'no-tabs': ['error', { allowIndentationTabs: true }],
         'space-before-function-paren': 0,
     },

@@ -8,7 +8,6 @@ import '../component/home-ulasan';
 import '../component/card-resto';
 import RestoApiSource from '../../data/resto-api';
 import BtnViewInitiator from '../../utils/btnview-initiator';
-import GaleriInitiator from '../../utils/galeri-initiator';
 import DialogueError from '../../utils/dialogue-error';
 
 const Home = {
@@ -27,13 +26,7 @@ const Home = {
     async afterRender() {
         try {
             const listResto = await RestoApiSource.listResto();
-            const wrapperCard = document.querySelector(
-                '.resto-populer__wrapper-card',
-            );
-            const galeriImg = document.querySelectorAll('.galeri-resto__img');
-            const overlayTitle = document.querySelectorAll(
-                '.overlay-img__nama-resto',
-            );
+            const wrapperCard = document.querySelector('.resto-populer__wrapper-card');
             const earlyTotalList = 3;
 
             for (const index in listResto) {
@@ -46,17 +39,13 @@ const Home = {
 
             BtnViewInitiator.init({
                 btnViewAll: document.querySelector('.resto-populer__btn-view'),
-                wrapperCard: document.querySelector(
-                    '.resto-populer__wrapper-card',
-                ),
+                wrapperCard: document.querySelector('.resto-populer__wrapper-card'),
                 dataList: listResto,
             });
 
-            GaleriInitiator.init({
-                galeriImg: galeriImg,
-                overlayTitle: overlayTitle,
-                dataResto: listResto,
-            });
+            const galeriResto = document.querySelector('galeri-resto');
+            console.log(listResto);
+            galeriResto.dataImgGaleri = listResto;
         } catch (error) {
             DialogueError.showDialogueError({
                 overlay: document.querySelector('.overlay-dialogue'),
