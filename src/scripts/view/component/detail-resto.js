@@ -34,7 +34,7 @@ class DetailResto extends HTMLElement {
 					<picture>
 						<source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataResto.pictureId}" />
 						<source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataResto.pictureId}" />
-						<img src="${CONFIG.BASE_IMAGE_URL.small}${this._dataResto.pictureId}" alt="Foto Resto ${this._dataResto.name}" />
+						<img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL.small}${this._dataResto.pictureId}" alt="Foto Resto ${this._dataResto.name}" />
 					</picture>
 					</div>
 					<div class="detail-resto__info-wrapper">

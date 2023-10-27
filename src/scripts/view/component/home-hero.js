@@ -20,25 +20,29 @@ class HomeHero extends HTMLElement {
                         <div class="total-user__image-wrapper flex-row">
                             <div class="total-user__image">
                                 <img
-                                    src="./images/profile/foto-profile-1.png"
+                                    class="lazyload"
+                                    data-src="./images/profile/foto-profile-1.png"
                                     alt="Foto Profil Pengguna"
                                 />
                             </div>
                             <div class="total-user__image">
                                 <img
-                                    src="./images/profile/foto-profile-2.jpg"
+                                    class="lazyload"
+                                    data-src="./images/profile/foto-profile-2.jpg"
                                     alt="Foto Profil Pengguna"
                                 />
                             </div>
                             <div class="total-user__image">
                                 <img
-                                    src="./images/profile/foto-profile-3.jpg"
+                                    class="lazyload"
+                                    data-src="./images/profile/foto-profile-3.jpg"
                                     alt="Foto Profil Pengguna"
                                 />
                             </div>
                             <div class="total-user__image">
                                 <img
-                                    src="./images/profile/foto-profile-4.jpg"
+                                    class="lazyload"
+                                    data-src="./images/profile/foto-profile-4.jpg"
                                     alt="Foto Profil Pengguna"
                                 />
                             </div>

@@ -63,6 +63,7 @@
     "dependencies": {
         "eslint-plugin-import": "^2.28.1",
         "idb": "^7.1.1",
+        "lazysizes": "^5.3.2",
         "regenerator-runtime": "^0.14.0",
         "workbox-precaching": "^7.0.0",
         "workbox-routing": "^7.0.0",

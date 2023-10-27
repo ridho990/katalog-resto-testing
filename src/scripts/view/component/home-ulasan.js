@@ -20,9 +20,9 @@ class HomeUlasan extends HTMLElement {
                     <article class="card-ulasan">
                         <div class="card-ulasan__profile flex-row">
                             <img
-                                src="./images/profile/foto-profile-1.png"
+                                data-src="./images/profile/foto-profile-1.png"
                                 alt="Foto Profile Pengguna"
-                                class="profile-img"
+                                class="lazyload profile-img"
                             />
                             <div class="card-ulasan__nama-profesi text-navy">
                                 <h3 class="card-ulasan__nama text-xl">
@@ -41,9 +41,9 @@ class HomeUlasan extends HTMLElement {
                     <article class="card-ulasan">
                         <div class="card-ulasan__profile flex-row">
                             <img
-                                src="./images/profile/foto-profile-2.jpg"
+                                data-src="./images/profile/foto-profile-2.jpg"
                                 alt="Foto Profile Pengguna"
-                                class="profile-img"
+                                class="lazyload profile-img"
                             />
                             <div class="card-ulasan__nama-profesi text-navy">
                                 <h3 class="card-ulasan__nama text-xl">
@@ -62,9 +62,9 @@ class HomeUlasan extends HTMLElement {
                     <article class="card-ulasan">
                         <div class="card-ulasan__profile flex-row">
                             <img
-                                src="./images/profile/foto-profile-3.jpg"
+                                data-src="./images/profile/foto-profile-3.jpg"
                                 alt="Foto Profile Pengguna"
-                                class="profile-img"
+                                class="lazyload profile-img"
                             />
                             <div class="card-ulasan__nama-profesi text-navy">
                                 <h3 class="card-ulasan__nama text-xl">

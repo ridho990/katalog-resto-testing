@@ -22,7 +22,8 @@ class JenisKuliner extends HTMLElement {
                         <h3 class="text-xl text-white">Western Resto</h3>
                         <p class="text-white">2 Resto</p>
                         <img
-                            src="./images/jenis-kuliner/western.svg"
+                            class="lazyload"
+                            data-src="./images/jenis-kuliner/western.svg"
                             alt="Ilustrasi Makanan Western"
                         />
                     </article>
@@ -30,7 +31,8 @@ class JenisKuliner extends HTMLElement {
                         <h3 class="text-xl text-white">Nusantara Resto</h3>
                         <p class="text-white">2 Resto</p>
                         <img
-                            src="./images/jenis-kuliner/nusantara.svg"
+                            class="lazyload"
+                            data-src="./images/jenis-kuliner/nusantara.svg"
                             alt="Ilustrasi Makanan Nusantara"
                         />
                     </article>
@@ -38,7 +40,8 @@ class JenisKuliner extends HTMLElement {
                         <h3 class="text-xl text-white">Chinese Resto</h3>
                         <p class="text-white">2 Resto</p>
                         <img
-                            src="./images/jenis-kuliner/chinese.svg"
+                            class="lazyload"
+                            data-src="./images/jenis-kuliner/chinese.svg"
                             alt="Ilustrasi Makanan Chinese"
                         />
                     </article>
@@ -46,7 +49,8 @@ class JenisKuliner extends HTMLElement {
                         <h3 class="text-xl text-white">Javanese Resto</h3>
                         <p class="text-white">3 Resto</p>
                         <img
-                            src="./images/jenis-kuliner/javanese.svg"
+                            class="lazyload"
+                            data-src="./images/jenis-kuliner/javanese.svg"
                             alt="Ilustrasi Makanan Javanese"
                         />
                     </article>

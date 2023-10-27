@@ -29,7 +29,7 @@ class cardResto extends HTMLElement {
 					<picture>
 						<source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._cardData.pictureId}" />
 						<source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._cardData.pictureId}" />
-						<img src="${CONFIG.BASE_IMAGE_URL.small}${this._cardData.pictureId}" alt="Foto Resto ${this._cardData.name}" />
+						<img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL.small}${this._cardData.pictureId}" alt="Foto Resto ${this._cardData.name}" />
 					</picture>
 				</div>
 				<div class="card-info-resto__bottom">

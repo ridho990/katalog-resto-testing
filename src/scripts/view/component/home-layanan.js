@@ -18,9 +18,9 @@ class HomeLayanan extends HTMLElement {
                 <div class="layanan__wrapper-card flex-row">
                     <article class="card-small card-layanan">
                         <img
-                            src="./images/layanan/lux.svg"
+                            data-src="./images/layanan/lux.svg"
                             alt="Ilustrasi Pencarian"
-                            class="card-layanan__img"
+                            class="lazyload card-layanan__img"
                         />
                         <h3 class="text-xl text-navy">Pencarian Restoran</h3>
                         <p class="text-navy">
@@ -29,9 +29,9 @@ class HomeLayanan extends HTMLElement {
                     </article>
                     <article class="card-small card-layanan">
                         <img
-                            src="./images/layanan/like.svg"
+                            data-src="./images/layanan/like.svg"
                             alt="Ilustrasi Pencarian"
-                            class="card-layanan__img"
+                            class="lazyload card-layanan__img"
                         />
                         <h3 class="text-xl text-navy">Ulasan</h3>
                         <p class="text-navy">
@@ -41,9 +41,9 @@ class HomeLayanan extends HTMLElement {
                     </article>
                     <article class="card-small card-layanan">
                         <img
-                            src="./images/layanan/calender.svg"
+                            data-src="./images/layanan/calender.svg"
                             alt="Ilustrasi Pencarian"
-                            class="card-layanan__img"
+                            class="lazyload card-layanan__img"
                         />
                         <h3 class="text-xl text-navy">Reservasi Online</h3>
                         <p class="text-navy">
@@ -53,9 +53,9 @@ class HomeLayanan extends HTMLElement {
                     </article>
                     <article class="card-small card-layanan">
                         <img
-                            src="./images/layanan/toa.svg"
+                            data-src="./images/layanan/toa.svg"
                             alt="Ilustrasi Pencarian"
-                            class="card-layanan__img"
+                            class="lazyload card-layanan__img"
                         />
                         <h3 class="text-xl text-navy">Informasi Resto</h3>
                         <p class="text-navy">

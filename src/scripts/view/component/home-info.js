@@ -14,24 +14,24 @@ class HomeInfo extends HTMLElement {
                     </h2>
                     <figure class="info__wrappper-image--mobile">
                         <img
-                            src="./images/info/info-img-1.jpg"
+                            data-src="./images/info/info-img-1.jpg"
                             alt="Foto Restaurant"
-                            class="info__img"
+                            class="lazyload info__img"
                         />
                         <img
-                            src="./images/info/info-img-2.jpg"
+                            data-src="./images/info/info-img-2.jpg"
                             alt="Foto Makanan"
-                            class="info__img-circle-one"
+                            class="lazyload info__img-circle-one"
                         />
                         <img
-                            src="./images/info/info-img-3.jpg"
+                            data-src="./images/info/info-img-3.jpg"
                             alt="Foto Makanan"
-                            class="info__img-circle-two"
+                            class="lazyload info__img-circle-two"
                         />
                         <img
-                            src="./images/info/info-img-4.jpg"
+                            data-src="./images/info/info-img-4.jpg"
                             alt="Foto Makanan"
-                            class="info__img-circle-three"
+                            class="lazyload info__img-circle-three"
                         />
                     </figure>
                     <p class="info__description text-navy">
@@ -43,24 +43,24 @@ class HomeInfo extends HTMLElement {
                 </div>
                 <figure class="info__wrappper-image">
                     <img
-                        src="./images/info/info-img-1.jpg"
+                        data-src="./images/info/info-img-1.jpg"
                         alt="Foto Restaurant"
-                        class="info__img"
+                        class="lazyload info__img"
                     />
                     <img
-                        src="./images/info/info-img-2.jpg"
+                        data-src="./images/info/info-img-2.jpg"
                         alt="Foto Makanan"
-                        class="info__img-circle-one"
+                        class="lazyload info__img-circle-one"
                     />
                     <img
-                        src="./images/info/info-img-3.jpg"
+                        data-src="./images/info/info-img-3.jpg"
                         alt="Foto Makanan"
-                        class="info__img-circle-two"
+                        class="lazyload info__img-circle-two"
                     />
                     <img
-                        src="./images/info/info-img-4.jpg"
+                        data-src="./images/info/info-img-4.jpg"
                         alt="Foto Makanan"
-                        class="info__img-circle-three"
+                        class="lazyload info__img-circle-three"
                     />
                 </figure>
             </section>
