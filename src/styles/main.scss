@@ -535,6 +535,8 @@ loader-ring {
 
     & img {
         width: 2.625rem;
+        height: 2.625rem;
+        aspect-ratio: 1/1;
     }
 
     & p {
@@ -554,6 +556,29 @@ loader-ring {
     & img {
         margin-top: 0.8rem;
     }
+
+    & img[alt='Ilustrasi Makanan Western'] {
+        width: 140px;
+        height: 140px;
+        aspect-ratio: 1/1;
+    }
+
+    & img[alt='Ilustrasi Makanan Nusantara'] {
+        width: 162px;
+        height: 140px;
+    }
+
+    & img[alt='Ilustrasi Makanan Chinese'] {
+        width: 152px;
+        height: 140px;
+    }
+
+    & img[alt='Ilustrasi Makanan Javanese'] {
+        width: 146px;
+        height: 140px;
+    }
+
+    // & img[]
 }
 
 // ini bagian rekomendasi resto populer
@@ -798,6 +823,7 @@ loader-ring {
 .profile-img {
     margin-right: 0.8rem;
     width: 3rem;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
