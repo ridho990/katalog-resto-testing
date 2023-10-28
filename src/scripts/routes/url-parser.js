@@ -1,16 +1,5 @@
 const UrlParser = {
     parseActiveUrlWithCombiner() {
-        // Ini untuk ambil hash setelah hash miro.com/#/ayam, maka akan mendapatkan nilai #/ayam
-        /*
-        isi dari object location
-        hash: "#/upcoming"
-        host: "localhost:9000"
-        hostname: "localhost"
-        href: "http://localhost:9000/#/upcoming"
-        origin: "http://localhost:9000"
-        pathname: "/"
-        port: "9000"
-        protocol: "http:" */
         const url = window.location.hash.slice(1).toLowerCase();
         const splitedUrl = this._urlSplitter(url);
         return this._urlCombiner(splitedUrl);
@@ -34,11 +23,7 @@ const UrlParser = {
 
     // Kombinasi hash url
     _urlCombiner(splitedUrl) {
-        return (
-            (splitedUrl.resource ? `/${splitedUrl.resource}` : '/') +
-            (splitedUrl.id ? '/:id' : '') +
-            (splitedUrl.verb ? `/${splitedUrl.verb}` : '')
-        );
+        return (splitedUrl.resource ? `/${splitedUrl.resource}` : '/') + (splitedUrl.id ? '/:id' : '') + (splitedUrl.verb ? `/${splitedUrl.verb}` : '');
     },
 };
 

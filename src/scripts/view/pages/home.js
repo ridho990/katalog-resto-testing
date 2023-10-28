@@ -44,7 +44,6 @@ const Home = {
             });
 
             const galeriResto = document.querySelector('galeri-resto');
-            console.log(listResto);
             galeriResto.dataImgGaleri = listResto;
         } catch (error) {
             DialogueError.showDialogueError({

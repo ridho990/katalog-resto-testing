@@ -72,7 +72,6 @@ class GaleriResto extends HTMLElement {
     }
 
     afterRender() {
-        console.log(this._dataImg);
         this.innerHTML = `
                 <section class="galeri-resto padding-x-content padding-y-content">
                     <div class="title-section">

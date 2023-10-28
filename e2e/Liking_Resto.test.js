@@ -13,12 +13,12 @@ Scenario('showing empty liked resto', ({ I }) => {
 
 /**
  * Buka halaman utama.
- * Pilih salah satu film. Misalnya film pertama.
- * Klik film tersebut.
- * Aplikasi membawa user ke halaman detail film.
- * Kita menekan tombol menyukai film.
- * Kita buka halaman daftar film yang disukai.
- * Kita melihat satu film yang telah disukai.
+ * Pilih salah satu resto. Misalnya resto pertama.
+ * Klik resto tersebut.
+ * Aplikasi membawa user ke halaman detail resto.
+ * Kita menekan tombol menyukai resto.
+ * Kita buka halaman daftar resto yang disukai.
+ * Kita melihat satu resto yang telah disukai.
  */
 Scenario('liking one resto', async ({ I }) => {
     I.see('Belum ada resto favorit', '.message-not-found');
@@ -64,9 +64,7 @@ Scenario('Cancel liking resto', async ({ I }) => {
 
     I.amOnPage('/#/favorite');
     let visibleCardResto = locate('.profile-resto__name-resto');
-    let totalVisibleCardResto = await I.grabNumberOfVisibleElements(
-        visibleCardResto,
-    );
+    let totalVisibleCardResto = await I.grabNumberOfVisibleElements(visibleCardResto);
     // Mengecek apakah ada pesan "Belum ada resto favorit" di page favorite
     I.dontSee('.wrapper-message-not-found', '.wrapper-card-favorite');
     // Cek apakah benar ada 1 card
@@ -78,27 +76,25 @@ Scenario('Cancel liking resto', async ({ I }) => {
 
     I.amOnPage('/#/favorite');
     visibleCardResto = locate('.profile-resto__name-resto');
-    totalVisibleCardResto = await I.grabNumberOfVisibleElements(
-        visibleCardResto,
-    );
+    totalVisibleCardResto = await I.grabNumberOfVisibleElements(visibleCardResto);
     I.see('Belum ada resto favorit', '.message-not-found');
     // Cek apakah benar ada 0 card
     assert.strictEqual(totalVisibleCardResto, 0);
 });
 
 /**
- * Pastikan belum ada film yang disukai.
+ * Pastikan belum ada resto yang disukai.
  * Buka halaman utama.
- * Pilih tiga film untuk disukai.
- * Buka halaman daftar film yang disukai.
- * Pastikan tiga film di atas ditampilkan.
- * Lakukan pencarian terhadap salah satu film.
- * Pastikan hasil pencarian film benar.
- * - Jumlah film sesuai.
- * - Judul film sesuai.
+ * Pilih tiga resto untuk disukai.
+ * Buka halaman daftar resto yang disukai.
+ * Pastikan tiga resto di atas ditampilkan.
+ * Lakukan pencarian terhadap salah satu resto.
+ * Pastikan hasil pencarian resto benar.
+ * - Jumlah resto sesuai.
+ * - Judul resto sesuai.
  */
 
-Scenario('searching movies', async ({ I }) => {
+Scenario('searching resto', async ({ I }) => {
     I.see('Belum ada resto favorit', '.message-not-found');
 
     I.amOnPage('/');
@@ -117,21 +113,15 @@ Scenario('searching movies', async ({ I }) => {
 
     I.amOnPage('/#/favorite');
     I.seeElement('#search-favorite');
-    const visibleCardResto = await I.grabNumberOfVisibleElements(
-        '.card-info-resto',
-    );
+    const visibleCardResto = await I.grabNumberOfVisibleElements('.card-info-resto');
     assert.strictEqual(titles.length, visibleCardResto);
 
     const searchValue = titles[1].substring(1, 3);
     // Memasukkan karakter ke dalam input
     I.fillField('#search-favorite', searchValue);
 
-    const matchingResto = titles.filter(
-        (title) => title.indexOf(searchValue) !== -1,
-    );
-    const visibleSearchedLikedResto = await I.grabNumberOfVisibleElements(
-        '.card-info-resto',
-    );
+    const matchingResto = titles.filter((title) => title.indexOf(searchValue) !== -1);
+    const visibleSearchedLikedResto = await I.grabNumberOfVisibleElements('.card-info-resto');
 
     // Menyamakan apakah jumlah card sama atau tidak
     assert.strictEqual(matchingResto.length, visibleSearchedLikedResto);

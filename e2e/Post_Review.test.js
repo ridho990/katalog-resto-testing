@@ -1,7 +1,15 @@
 const assert = require('assert');
 
 Feature('Post Review');
-
+/**
+ * Buka halaman utama
+ * Pilih salah satu resto. Misalnya resto pertama.
+ * Klik resto tersebut.
+ * Aplikasi membawa user ke halaman detail resto
+ * Kita mengisi nama dan ulasan
+ * Kita menekan tombol submit
+ * Kita melihat review yang berhasil disubmit
+ */
 Scenario('Post a review with name and text review', async ({ I }) => {
     I.amOnPage('/');
     I.click(locate('.profile-resto__name-resto').first());
