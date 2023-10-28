@@ -87,8 +87,8 @@ class GaleriResto extends HTMLElement {
                     <div class="galeri-resto__wrapper-galeri">
                         <div class="galeri-resto__wrapper-img galeri-1">
                             <picture>
-                                <source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[0].pictureId}" />
-                                <source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[0].pictureId}" />
+                                <source media="(max-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[0].pictureId}" />
+                                <source media="(min-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[0].pictureId}" />
                                 <img class="lazyload galeri-resto__img"
                                 data-src="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[0].pictureId}" 
                                 alt="Galeri Resto ${this._dataImg[0].name}" />
@@ -100,8 +100,8 @@ class GaleriResto extends HTMLElement {
                         </div>
                         <div class="galeri-resto__wrapper-img galeri-2">
                             <picture>
-                                <source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[1].pictureId}" />
-                                <source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[1].pictureId}" />
+                                <source media="(max-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[1].pictureId}" />
+                                <source media="(min-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[1].pictureId}" />
                                 <img class="lazyload galeri-resto__img"
                                 data-src="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[1].pictureId}" 
                                 alt="Galeri Resto ${this._dataImg[1].name}" />
@@ -113,8 +113,8 @@ class GaleriResto extends HTMLElement {
                         </div>
                         <div class="galeri-resto__wrapper-img galeri-3">
                             <picture>
-                                <source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[2].pictureId}" />
-                                <source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[2].pictureId}" />
+                                <source media="(max-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[2].pictureId}" />
+                                <source media="(min-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[2].pictureId}" />
                                 <img class="lazyload galeri-resto__img"
                                 data-src="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[2].pictureId}" 
                                 alt="Galeri Resto ${this._dataImg[2].name}" />
@@ -126,8 +126,8 @@ class GaleriResto extends HTMLElement {
                         </div>
                         <div class="galeri-resto__wrapper-img galeri-4">
                             <picture>
-                                <source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[3].pictureId}" />
-                                <source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[3].pictureId}" />
+                                <source media="(max-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[3].pictureId}" />
+                                <source media="(min-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[3].pictureId}" />
                                 <img class="lazyload galeri-resto__img"
                                 data-src="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[3].pictureId}" 
                                 alt="Galeri Resto ${this._dataImg[3].name}" />
@@ -139,8 +139,8 @@ class GaleriResto extends HTMLElement {
                         </div>
                         <div class="galeri-resto__wrapper-img galeri-5">
                             <picture>
-                                <source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[4].pictureId}" />
-                                <source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[4].pictureId}" />
+                                <source media="(max-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[4].pictureId}" />
+                                <source media="(min-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[4].pictureId}" />
                                 <img class="lazyload galeri-resto__img"
                                 data-src="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[4].pictureId}" 
                                 alt="Galeri Resto ${this._dataImg[4].name}" />
@@ -152,8 +152,8 @@ class GaleriResto extends HTMLElement {
                         </div>
                         <div class="galeri-resto__wrapper-img galeri-6">
                             <picture>
-                                <source media="(max-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[5].pictureId}" />
-                                <source media="(min-width: 680px)" srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[5].pictureId}" />
+                                <source media="(max-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[5].pictureId}" />
+                                <source media="(min-width: 680px)" data-srcset="${CONFIG.BASE_IMAGE_URL.medium}${this._dataImg[5].pictureId}" />
                                 <img class="lazyload galeri-resto__img"
                                 data-src="${CONFIG.BASE_IMAGE_URL.small}${this._dataImg[5].pictureId}" 
                                 alt="Galeri Resto ${this._dataImg[5].name}" />
