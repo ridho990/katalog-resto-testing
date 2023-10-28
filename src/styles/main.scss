@@ -27,6 +27,21 @@ a {
     text-decoration: none;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+}
+
 .text-4xl {
     font-size: 1.802rem;
     line-height: 2.5rem;
@@ -256,6 +271,7 @@ loader-ring {
 .header__logo-img,
 .footer__logo-img {
     height: 2.5rem;
+    width: 100%;
 }
 
 .header__logo-name,
@@ -439,6 +455,8 @@ loader-ring {
 .info__img {
     position: relative;
     width: 100%;
+    height: 100%;
+    aspect-ratio: 289/416;
 }
 
 .info__img-circle-one {

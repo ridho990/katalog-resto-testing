@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
@@ -20,14 +21,23 @@ module.exports = {
                 test: /\.scss$/i,
                 use: [
                     {
-                        loader: 'style-loader',
+                        loader: MiniCssExtractPlugin.loader,
+                        // options: {
+                        //     hmr: process.env.NODE_ENV === 'development',
+                        // },
                     },
-                    {
-                        loader: 'css-loader',
-                    },
-                    {
-                        loader: 'sass-loader',
-                    },
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                    // {
+                    //     loader: 'style-loader',
+                    // },
+                    // {
+                    //     loader: 'css-loader',
+                    // },
+                    // {
+                    //     loader: 'sass-loader',
+                    // },
                 ],
             },
             {
@@ -63,6 +73,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/templates/index.html'),
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
         }),
         new CopyWebpackPlugin({
             patterns: [
